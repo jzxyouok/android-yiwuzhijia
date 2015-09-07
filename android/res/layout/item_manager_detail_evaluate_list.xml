@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        
+        android:layout_marginRight="16dp">
+        <RatingBar 
+            android:id="@+id/item_manager_detail_rating"
+            style="@style/MyRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="5"/>
+        
+        <TextView 
+            android:id="@+id/item_manager_detail_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机尾号：xxxx"
+            android:layout_marginLeft="8dp"
+            android:textSize="10sp"/>
+        
+        <TextView 
+            android:id="@+id/item_manager_detail_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="aaa"
+            android:textSize="10sp"
+            android:visibility="gone"/>
+        
+        <TextView 
+            android:id="@+id/item_manager_detail_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="购买楼房：xxxx"
+            android:textSize="10sp"
+             android:visibility="gone"/>
+        
+        <TextView 
+            android:id="@+id/item_manager_detail_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            android:gravity="right|center_vertical"
+            android:text="时间"
+            android:textSize="10sp"
+            />
+    </LinearLayout>
+
+    <TextView 
+        android:id="@+id/item_manager_detail_evaluate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        
+        android:layout_marginRight="16dp"
+        android:text="sadsadadsa"/>
+</LinearLayout>

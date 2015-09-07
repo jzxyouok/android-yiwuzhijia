@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="@drawable/shape_dialog_see" >
+    <TextView 
+        android:id="@+id/see_dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="处理"
+        android:textSize="16sp"
+        android:textColor="#4F4F4F"/>
+
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#B8B8B8"/>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+        <Button 
+            android:id="@+id/see_dialog_seen_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/btn_shape_heavy_orange"
+            android:text="接待"
+            android:textSize="12sp"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/see_dialog_give_up_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/btn_shape_yellow"
+            android:text="放弃"
+            android:textSize="12sp"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+</LinearLayout>

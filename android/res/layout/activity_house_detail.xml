@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5" >
+
+    <include
+        android:id="@+id/house_detail_title"
+        layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/house_detail_tail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3B3B3B" >
+
+        <TextView
+            android:id="@+id/house_detail_dialog_apoint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/house_detail_dialog_icon"
+            android:gravity="right|center_vertical"
+            android:text="预约经纪人"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/house_detail_dialog_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/house_detail_dialog_text"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@+id/house_detail_dialog_icon"
+            android:text="221312"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/house_detail_dialog_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/house_detail_dialog_icon"
+            android:text="售楼处电话"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/house_detail_dialog_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/telephone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/house_detail_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/house_detail_tail"
+        android:layout_below="@id/house_detail_title"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/house_detail_outter_gallery"
+                android:layout_width="fill_parent"
+                android:layout_height="136dp"
+                android:drawingCacheQuality="low" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="均价："
+                    android:textColor="#FD8E1A"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/house_detail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13000"
+                    android:textColor="#FD8E1A"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元/平方米"
+                    android:textSize="14sp"
+                    android:textColor="#FD8E1A" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="-3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/area_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="所在区域："
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/property_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="物业类型："
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/decorate_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="精装："
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/floor_rate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="容积率："
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/green_rate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="绿化率："
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/property_fee"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="物业费："
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/location_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="楼盘地址："
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/baidumap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" >
+
+                <fragment
+                    android:id="@+id/house_detail_fragment"
+                    android:name="com.baidu.mapapi.map.MapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp" />
+
+                <ImageView
+                    android:id="@+id/house_detail_navi"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/icon_compass" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/house_detail_imagescount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="主力户型图："
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <Gallery
+                android:id="@+id/house_detail_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-250dp"
+                android:drawingCacheQuality="low"
+                android:scrollbars="none"
+                android:spacing="5dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

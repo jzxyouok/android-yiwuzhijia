@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">易屋经纪人</string>
+
+    <!-- XListView -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="qfish_introduction">Love coding and hand-drawing, while he is also skilled in HTML and CSS and JS.
+        What he always saying is "Fight, a way of surviving ~".</string>
+
+    <string-array name="customer_relationType">
+        <item>意向</item><!-- 2 -->
+        <item>重要</item><!-- 3 -->
+        <item>失效</item><!-- 5 -->
+    </string-array>
+    <string-array name="cd_arear">
+        <item>金牛区</item>
+        <item>锦江区</item>
+        <item>成华区</item>
+        <item>武侯区</item>
+        <item>双流区</item>
+    </string-array>
+    <string-array name="cd_house">
+        <item>天鹅湖</item>
+        <item>天鹅湖2</item>
+        <item>天鹅湖3</item>
+        <item>天鹅湖4</item>
+        <item>天鹅湖6</item>
+    </string-array>
+    <string-array name="client_state">
+        <item>有意向</item>
+        <item>无意向</item>
+        <item> 成功</item>
+    </string-array>
+
+</resources>

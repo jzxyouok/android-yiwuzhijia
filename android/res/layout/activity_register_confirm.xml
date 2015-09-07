@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include 
+        layout="@layout/titlebar"/>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="短信验证码已发送到这个号码"/>
+    
+    <TextView 
+        android:id="@+id/register_phone_num"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="xxxx"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText 
+            android:id="@+id/register_verify_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="#ffffff"
+            android:hint="请输入验证码"
+            android:textColor="#000000"/>
+        
+        <Button 
+            android:id="@+id/register_resend"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.0"
+            android:text="重发"/>
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/register_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="提交并验证"/>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="稍后再试"/>
+
+</LinearLayout>

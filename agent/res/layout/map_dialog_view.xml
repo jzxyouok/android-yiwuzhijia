@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/user_info_background" >
+    
+    <LinearLayout 
+	     android:id="@+id/view_pager_index_wrapper"
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="horizontal"
+	     android:layout_marginTop="8dp"
+	     android:layout_marginBottom="8dp"
+	     android:gravity="center">
+	    <Button 
+	        android:id="@+id/index_prev"
+	        android:layout_width="8dp"
+	        android:layout_height="24dp"
+	        android:layout_marginRight="8dp"
+	        android:background="@drawable/icon_arrow_left"/>
+    
+	    <TextView
+		     android:id="@+id/view_pager_index"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_alignParentTop="true"
+		     android:layout_centerHorizontal="true"
+		     android:text="dasdasda"
+		     android:textSize="14sp"
+		     android:textColor="#ffffff" />
+    
+	    <Button 
+	        android:id="@+id/index_next"
+	        android:layout_width="8dp"
+	        android:layout_height="24dp"
+	        android:layout_marginLeft="8dp"
+	        android:background="@drawable/icon_arrow_right" />
+	</LinearLayout>
+
+        <LinearLayout 
+            android:id="@+id/map_dialog_component"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_pager_index_wrapper"
+            android:orientation="vertical">
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="16dp">
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="8dp">
+                    <ImageView 
+	                    android:id="@+id/map_dialog_component_img"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginBottom="8dp"
+	                    android:src="@drawable/ic_launcher"/>
+                    
+                    <TextView 
+                        android:id="@+id/map_dialog_component_managername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="经纪人：xx"
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/map_dialog_component_after_appoint"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_launcher"/>
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="预约成功，3秒后跳到主页"/>
+                </LinearLayout>
+                
+                <LinearLayout 
+                    android:id="@+id/map_dialog_component_appoint_wrapper"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+                    <TextView 
+                        android:id="@+id/map_dialog_component_getmoney"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="8dp"
+                        android:text="易屋返现：xxxx"
+                        android:textColor="#ffffff"/>
+                    
+                    <TextView 
+                        android:id="@+id/map_dialog_component_car"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="8dp"
+                        android:text="专车看房：xx"
+                        android:textColor="#ffffff"/>
+                    
+                    <LinearLayout 
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+                        <TextView 
+	                        android:id="@+id/map_dialog_component_state"
+	                        android:layout_width="fill_parent"
+	                        android:layout_weight="0.3"
+	                        android:layout_height="wrap_content"
+	                        android:gravity="center_vertical"
+	                        android:text="交房状态：xxxx"
+	                        android:textColor="#ffffff"/>
+                        
+                        <TextView 
+                            android:id="@+id/map_dialog_component_detail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:layout_gravity="right|bottom"
+                            android:text="楼盘详情 >>"
+                            android:textColor="#FF2F04"
+                            android:textSize="10sp"/>
+                    </LinearLayout>
+                    
+                    <TextView 
+		               android:id="@+id/map_dialog_component_appoint"
+		               android:layout_width="fill_parent"
+		               android:layout_height="wrap_content"
+		               android:gravity="center"
+		               android:background="#77707070"
+		               android:padding="8dp"
+		               android:text="立刻预约"
+		               android:textColor="#ffffff"
+		               android:textSize="14sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+            <TextView 
+                android:id="@+id/map_dialog_component_housename"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical|left"
+                android:text="房屋名称"
+                android:textColor="#ffffff"
+                android:textSize="14sp"/>
+            
+            <TextView 
+                android:id="@+id/map_dialog_component_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical|right"
+                android:text="房屋价格"
+                android:textColor="#ffffff"
+                android:textSize="18sp"/>
+        </LinearLayout>
+        
+        <TextView 
+			android:id="@+id/map_dialog_component_location"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical|left"
+			android:layout_marginLeft="8dp"
+			android:layout_marginRight="8dp"
+			android:text="房屋地址"
+			android:textColor="#ffffff"
+			android:textSize="12sp"/>
+</LinearLayout>

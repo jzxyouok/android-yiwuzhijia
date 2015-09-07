@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/bind_alipay_wrapper_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp"
+           
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/bind_alipay_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_alipay_btn" />
+
+                <EditText
+                    android:id="@+id/bind_alipay_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/edit_text_shape"
+                    android:ems="10"
+                    android:hint=""
+                    android:textSize="18sp" >
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/bind_alipay_wrapper"
+                android:layout_marginTop="8dp"
+                android:background="#DCDCDC" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout 
+        android:visibility="gone"
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:orientation="horizontal"
+		     android:layout_marginLeft="16dp"
+		     android:layout_marginRight="16dp"
+		     android:layout_marginTop="8dp"
+		      android:background="@drawable/edit_text_shape">
+		     <ImageView
+		         android:id="@+id/imageView1"
+		         android:layout_width="20dp"
+		         android:layout_height="20dp"
+		         
+				 android:layout_gravity="center_vertical"
+		         android:src="@drawable/icon_phone" />
+		     
+		     <EditText
+	            android:id="@+id/register_username"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	           
+	            android:gravity="left|center_vertical"
+	            android:background="#ffffff"
+	            android:padding="4dp"
+	            android:inputType="phone"
+	            android:hint="手机号"
+	            android:maxLength="11"
+	            android:numeric="integer"
+	            android:textSize="14sp"
+	            android:textColor="#000000" >
+	        </EditText>
+		 </LinearLayout>
+    
+    <RelativeLayout 
+          android:visibility="gone"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="16dp"
+	       android:layout_marginRight="16dp"
+	       android:layout_marginTop="16dp">
+	
+	        <EditText
+	            android:id="@+id/activity_register_cerifycode"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_gravity="center_vertical"
+	            android:layout_toLeftOf="@+id/activity_register_send_cerifycode"
+	            android:gravity="center_vertical"
+	            android:background="@drawable/edit_text_shape"
+	            android:paddingLeft="44dp"
+	            android:inputType="number"
+	            android:hint="请输入验证码"
+	            android:numeric="integer"
+	            android:textSize="14sp" />
+	
+	        <Button
+	            android:id="@+id/activity_register_send_cerifycode"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:layout_alignBaseline="@+id/activity_register_cerifycode"
+	            android:layout_alignBottom="@+id/activity_register_cerifycode"
+	            android:layout_alignParentRight="true"
+	            android:background="@drawable/btn_shape_heavy_red"
+	            android:gravity="center"
+	            android:text="发送验证码"
+	            android:textColor="#ffffff" />
+	
+	    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bind_now"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_shape_light_gray"
+        android:clickable="false" >
+
+        <TextView
+            android:id="@+id/bind_now_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/bind_now_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/bind_now_text"
+            android:src="@drawable/icon_bind_now" />
+    </RelativeLayout>
+
+</LinearLayout>

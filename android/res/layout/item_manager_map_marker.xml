@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/main_manange_bg">
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" >
+	    
+	   
+
+	    <com.android.house.view.CircleImageView
+	        android:id="@+id/map_manager_img"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginTop="8dp"
+	        android:layout_marginLeft="18dp"
+	        android:scaleType="centerCrop"
+	        android:src="@drawable/ic_launcher" />
+	 <TextView
+	        android:id="@+id/map_manager_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="经纪人"
+	        android:layout_toRightOf="@id/map_manager_img"
+	        android:layout_marginTop="3dp"
+	        android:layout_marginLeft="6dp"
+	        android:textColor="#3E3E3E"
+	        android:textSize="8sp" />
+	   
+	     <RatingBar
+	        android:id="@+id/map_manager_ratingbar"
+	        style="@style/agent_ratingbar_style"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/map_manager_name"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/map_manager_img"
+	        android:isIndicator="true"
+	         />
+
+    </RelativeLayout>
+</LinearLayout>

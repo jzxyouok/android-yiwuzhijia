@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#E6E6E6"/>
+    
+    <include 
+		layout="@layout/titlebar"/>
+	        
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="16dp"
+        android:background="#E6E6E6"/>
+    
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="16dp">
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1.0"
+	        android:orientation="horizontal">
+	        <TextView 
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_gravity="center_vertical"
+	         android:text="经纪人:"/>
+	        <TextView 
+	         android:id="@+id/fail_manager"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_gravity="center_vertical"
+	         android:text="xxx"/>
+	    </LinearLayout>
+    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1.0"
+	        android:orientation="horizontal">
+	        <TextView 
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_gravity="center_vertical"
+	         android:text="服务时间:"/>
+	        <TextView 
+	         android:id="@+id/fail_service_time"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_gravity="center_vertical"
+	         android:text="xxxx"/>
+	    </LinearLayout>
+	</LinearLayout>
+	
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="16dp"
+        android:background="#E6E6E6"/>
+	
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="买房记录"
+        android:textColor="#FD0D0E"/>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="16dp"
+        android:background="#E6E6E6"/>
+    
+    <ListView 
+        android:id="@+id/fail_buyhouse_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="16dp"
+        android:divider="#E6E6E6"
+        android:dividerHeight="0.1dp"></ListView>
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/see_client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="客户：张先生"
+            android:textColor="#444444"
+            android:textSize="12sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/see_client_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/see_client_name"
+            android:text="意向区域：城南"
+            android:textColor="#444444"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/see_client_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="16dp"
+            android:layout_toLeftOf="@+id/see_client_confirm"
+            android:layout_toRightOf="@+id/see_client_area"
+            android:text="意向总价：10-20万"
+            android:textColor="#444444"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/see_client_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/see_client_sum"
+            android:background="#E98C25"
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="2dp"
+            android:text="接待"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/see_client_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="来源：交流"
+            android:textColor="#444444"
+            android:textSize="12sp" />
+        
+        <TextView 
+	        android:id="@+id/see_client_send_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginLeft="16dp"
+	        android:layout_marginTop="8dp"
+	        android:layout_marginRight="8dp"
+	        android:text="推送时间：2015.02.02   16:12:30"
+	        android:textColor="#878787"
+	        android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/see_client_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/see_client_from"
+            android:text="电话：xxxx"
+            android:textColor="#444444"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/mainview_menu_poisimulate"
+        android:title="poi模拟服务器"/>
+    <item android:id="@+id/mainview_menu_zoombar"
+        android:title="显示marker"
+        />
+	<item android:id="@+id/mainview_menu_getcurrentcenter"
+        android:title="得到当前视图中心点"
+        />
+	<item 
+	    android:id="@+id/mainview_menu_findhouse"
+	    android:title="附近房源"
+	    />
+	<item 
+	    android:id="@+id/mainview_menu_locate"
+	    android:title="去除marker"
+	    />
+</menu>

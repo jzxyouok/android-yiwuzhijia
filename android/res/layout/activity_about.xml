@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F0" >
+    <include 
+        layout="@layout/titlebar"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="        易屋之家是由成都易屋之家科技有限公司研发，一款便民买房的智能手机应用，买房客户与开发商建立零距离通道，买房客户可以通过易屋之家APP享受免费专业经纪人，一对一买房过程全程服务，同时减少非专业买房烦恼，我们计划2016年完成全国50个城市覆盖，为更多买房客户提供专业服务，科技让生活更美好。"
+        android:textColor="#454545" />
+
+</LinearLayout>

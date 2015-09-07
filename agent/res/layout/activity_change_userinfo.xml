@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F3F3" >
+    <LinearLayout
+        android:id="@+id/change_info_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="#F5F5F5" >
+		<RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp">
+	
+		    <ImageView
+		        android:id="@+id/change_info_title_back"
+		        android:layout_width="30dp"
+	        	android:layout_height="30dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        android:src="@drawable/icon_back" />
+		    
+		    <TextView 
+		        android:id="@+id/change_info_title_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+	            android:gravity="center"
+		        android:layout_gravity="center"
+		        android:layout_centerInParent="true"
+	            android:text="标题"
+	            android:textSize="24dp"
+	            android:textColor="#000000"
+	            android:ellipsize="end"
+	            android:singleLine="true"/>
+
+		    <TextView
+		        android:id="@+id/change_info_title_confirm"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true"
+		        android:ellipsize="end"
+		        android:gravity="center"
+		        android:singleLine="true"
+		        android:layout_marginRight="8dp"
+		        android:text="完成"
+		        android:textColor="#000000"
+		        android:textSize="18sp" />
+		</RelativeLayout>
+	</LinearLayout>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#E6E6E6"/>
+    
+    <com.external.maxwin.view.XListView
+        android:id="@+id/change_user_info_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" >
+    </com.external.maxwin.view.XListView>
+     
+</LinearLayout>

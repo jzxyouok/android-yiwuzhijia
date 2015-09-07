@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    <RelativeLayout 
+        android:id="@+id/trending_manager_client_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+	    <TextView
+	        android:id="@+id/trending_manager_client_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="8dp"
+	        android:text="欧阳先生"
+	        android:textColor="#000000"
+	        android:textSize="10sp" />
+
+	    <TextView
+	        android:id="@+id/trending_manager_client_phone"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/trending_manager_client_name"
+	        android:layout_marginLeft="8dp"
+	        android:text="13350234331"
+	        android:textColor="#000000"
+	        android:textSize="10sp" />
+
+	    <TextView
+	        android:id="@+id/trending_manager_client_house"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/trending_manager_client_phone"
+	        android:layout_marginLeft="8dp"
+	        android:text="中号九号公馆"
+	        android:textColor="#000000"
+	        android:textSize="10sp" />
+
+	    <TextView
+	        android:id="@+id/trending_manager_client_manager_money"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/trending_manager_client_house_money"
+	        android:layout_marginLeft="8dp"
+	        android:text="佣金1000元"
+	        android:textColor="#000000"
+	        android:textSize="10sp" />
+
+	    <TextView
+	        android:id="@+id/trending_manager_client_house_money"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/trending_manager_client_house"
+	        android:layout_alignBottom="@+id/trending_manager_client_house"
+	        android:layout_toRightOf="@+id/trending_manager_client_house"
+	        android:layout_marginLeft="8dp"
+	        android:text="房款1302万"
+	        android:textColor="#000000"
+	        android:textSize="10sp" />
+
+	    <TextView
+	        android:id="@+id/trending_manager_client_date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/trending_manager_client_name"
+	        android:layout_below="@+id/trending_manager_client_name"
+	        android:layout_marginTop="8dp"
+	        android:text="2015.11.11"
+	        android:textColor="#7F7F7F"
+	        android:textSize="10sp" />
+
+	    <TextView
+	        android:id="@+id/trending_manager_client_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/trending_manager_client_date"
+	        android:layout_alignBottom="@+id/trending_manager_client_date"
+	        android:layout_toRightOf="@+id/trending_manager_client_date"
+	        android:layout_marginLeft="8dp"
+	        android:text="17:00"
+	        android:textColor="#7F7F7F"
+	        android:textSize="10sp" />
+
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#dcdcdc"/>
+</LinearLayout>

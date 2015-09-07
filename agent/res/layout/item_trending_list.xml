@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp" >
+    <RelativeLayout 
+        android:id="@+id/trending_client_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+        <com.BeeFramework.view.WebImageView 
+	        android:id="@+id/trending_client_img"
+	        android:layout_width="48dp"
+	        android:layout_height="48dp"
+	        android:layout_marginTop="8dp"
+	        android:layout_marginLeft="16dp"
+	        android:src="@drawable/icon_default_user_img"/>
+
+	    <TextView
+	        android:id="@+id/trending_client_add"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="16dp"
+	        android:layout_alignParentRight="true"
+	        
+	        android:layout_alignParentBottom="true"
+	       
+	        android:layout_marginLeft="8dp"
+	        android:background="@drawable/btn_shape_heavy_orange"
+	        android:text="增加"
+	        android:textColor="#ffffff" />
+
+	    <TextView
+	        android:visibility="gone"
+	        android:id="@+id/trending_client_house"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/trending_client_add"
+	        android:text="楼盘名xxx"
+	        android:textColor="#000000"
+	        android:textSize="14sp" />
+
+	    <TextView
+	        android:layout_alignParentTop="true"
+	        android:id="@+id/trending_client_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	       android:layout_marginTop="8dp"
+	        android:layout_marginLeft="8dp"
+	        android:layout_toRightOf="@+id/trending_client_img"
+	        android:text="xx客户"
+	        android:textColor="#000000"
+	        android:textSize="14sp" />
+
+	    <TextView
+	          android:layout_marginTop="8dp"
+	        android:id="@+id/trending_client_phone"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="16dp"
+	        android:layout_toRightOf="@+id/trending_client_name"
+	        android:text="客户电话xx"
+	        android:textColor="#000000"
+	        android:textSize="14sp" />
+    </RelativeLayout>
+    
+    <View 
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#dcdcdc"
+        android:layout_below="@+id/trending_client_wrapper"/>
+</RelativeLayout>

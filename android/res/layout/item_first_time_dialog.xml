@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_first_time_dialog_wrapper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+ 	android:background="@drawable/icon_firsttime_dialog" >
+	 <ImageView
+	     android:id="@+id/item_first_time_dialog_close"
+	     android:layout_width="32dp"
+	     android:layout_height="32dp"
+	     android:layout_marginTop="16dp"
+	     android:layout_marginRight="16dp"
+	     android:layout_gravity="right|top"
+	     android:src="@drawable/icon_close" />
+	 
+	 <LinearLayout 
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_gravity="center"
+	     android:layout_marginBottom="48dp"
+	     android:orientation="vertical">
+	     <TextView 
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:gravity="center"
+	         android:layout_marginTop="24dp"
+	         android:layout_marginBottom="8dp"
+	         android:text="首次注册返500元"
+	         android:textColor="#ffffff"
+	         android:textSize="24sp" />
+	     
+	     <View 
+	         android:layout_width="fill_parent"
+	         android:layout_marginLeft="48dp"
+	         android:layout_marginRight="48dp"
+	         android:layout_height="0.1dp"
+	         android:background="#ffffff"/>
+	     
+	     <TextView 
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:text="所有程度的新老用户，使用易屋之家买合作楼盘享500元现金优惠！一对一经纪人免费带你住进新房，承诺0佣金，会员永久免费！"
+	         android:textSize="10sp"
+	         android:layout_marginTop="8dp"
+	         android:layout_marginLeft="48dp"
+	         android:layout_marginRight="48dp"
+	         android:textColor="#ffffff"/>
+	     
+	     <TextView 
+	         android:id="@+id/item_first_time_dialog_time"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:gravity="center"
+	         android:layout_marginTop="4dp"
+	         android:text="优惠活动：2015年5月至2015年7月"
+	         android:textColor="#ffffff"
+	         android:textSize="8sp"/>
+	 </LinearLayout>
+	    
+    <TextView
+	     android:id="@+id/item_first_time_dialog_text"
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:gravity="center_horizontal"
+	     android:layout_gravity="bottom"
+	     android:layout_marginBottom="32dp"
+	     android:text="亲。让我们一起用科技的力量改变生活！"
+	     android:textColor="#000000"
+	     android:textSize="14sp" />
+</FrameLayout>

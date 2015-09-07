@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F3F3" >
+    <include 
+        layout="@layout/titlebar"/>
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_main_search_shape"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp">
+        <EditText 
+	        android:id="@+id/search_search"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="2dp"
+	        android:paddingLeft="8dp"
+	        android:background="#ffffff"
+	        android:gravity="left|center_vertical"
+	        android:singleLine="true"
+	        android:hint="搜索"/>
+
+        <ImageView
+            android:id="@+id/search_search_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@+id/search_search"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_search" />
+
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/search_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#DCDCDC"
+        android:dividerHeight="0.1dp"></ListView>
+</LinearLayout>

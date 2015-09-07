@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical">
+	        <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#E6E6E6"/>
+	        
+	        <include 
+	            layout="@layout/titlebar"/>
+	        
+           <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical">
+	        <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#E6E6E6"/>
+	        
+            <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:layout_marginTop="8dp"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginLeft="16dp"
+		        android:layout_marginRight="16dp">
+		
+		        <RelativeLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1.0" >
+		
+		            <TextView
+		                android:id="@+id/undone_manager_text"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:layout_alignParentTop="true"
+		                android:text="返利："
+		                android:textColor="#808080" />
+		
+		            <TextView
+		                android:id="@+id/undone_manager"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentTop="true"
+		                android:layout_toRightOf="@+id/undone_manager_text"
+		                android:text="xxx"
+		                android:textColor="#808080" />
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1.0" >
+		
+		            <TextView
+		                android:id="@+id/undone_service_time_text"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:layout_gravity="center_vertical"
+		                android:text="购买人："
+		                android:textColor="#808080" />
+		
+		            <TextView
+		                android:id="@+id/undone_service_time"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentTop="true"
+		                android:layout_toRightOf="@+id/undone_service_time_text"
+		                android:text="xxxx"
+		                android:textColor="#808080" />
+		        </RelativeLayout>
+		    </LinearLayout>
+		    
+            <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="16dp"
+        android:background="#E6E6E6"/>
+		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:layout_marginTop="8dp"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginLeft="16dp"
+		        android:layout_marginRight="16dp">
+		
+		        <RelativeLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1.0" >
+		
+		            <TextView
+		                android:id="@+id/undone_house_no_text"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:layout_alignParentTop="true"
+		                android:text="返利："
+		                android:textColor="#808080" />
+		
+		            <TextView
+		                android:id="@+id/undone_house_no"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentTop="true"
+		                android:layout_toRightOf="@+id/undone_house_no_text"
+		                android:text="xxx"
+		                android:textColor="#808080" />
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1.0" >
+		
+		            <TextView
+		                android:id="@+id/undone_house_price_text"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:layout_gravity="center_vertical"
+		                android:text="购买人："
+		                android:textColor="#808080" />
+		
+		            <TextView
+		                android:id="@+id/undone_house_price"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentTop="true"
+		                android:layout_toRightOf="@+id/undone_house_price_text"
+		                android:text="xxxx"
+		                android:textColor="#808080" />
+		        </RelativeLayout>
+		    </LinearLayout>
+		    
+		    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="16dp"
+        android:background="#E6E6E6"/>
+		    
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:layout_marginTop="8dp"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginLeft="16dp"
+		        android:layout_marginRight="16dp">
+		
+		        <RelativeLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1.0" >
+		
+		            <TextView
+		                android:id="@+id/undone_bonus_text"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:layout_alignParentTop="true"
+		                android:text="返利："
+		                android:textColor="#808080" />
+		
+		            <TextView
+		                android:id="@+id/undone_bonus"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentTop="true"
+		                android:layout_toRightOf="@+id/undone_bonus_text"
+		                android:text="xxx"
+		                android:textColor="#808080" />
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1.0" >
+		
+		            <TextView
+		                android:id="@+id/undone_buyers_text"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:layout_gravity="center_vertical"
+		                android:text="购买人："
+		                android:textColor="#808080" />
+		
+		            <TextView
+		                android:id="@+id/undone_buyers"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentTop="true"
+		                android:layout_toRightOf="@+id/undone_buyers_text"
+		                android:text="xxxx"
+		                android:textColor="#808080" />
+		        </RelativeLayout>
+		    </LinearLayout>
+		    
+		    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="16dp"
+        android:background="#E6E6E6"/>
+		    
+		    <TextView 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="服务评价 >>"
+		        android:textColor="#FE1A09"
+		        android:layout_margin="16dp"/>
+		    
+		    <RelativeLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="16dp"
+		        android:layout_marginRight="16dp"
+		        android:layout_marginBottom="16dp" >
+		
+		        <TextView
+		            android:id="@+id/undone_pick_up_ratingbar_level"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:gravity="center_vertical"
+		            android:layout_marginLeft="16dp"
+		            android:text="x分"
+		            android:textColor="#000000"
+		            android:textSize="14sp" />
+		
+		        <TextView
+		            android:id="@+id/undone_pick_up_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_toLeftOf="@+id/undone_pick_up_ratingbar"
+		            android:text="经纪人买房接送服务"
+		            android:textColor="#808080"
+		            android:textSize="14sp" />
+		
+		        <RatingBar
+		            android:id="@+id/undone_pick_up_ratingbar"
+		            style="@style/MyRatingBar"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentTop="true"
+		            android:layout_marginLeft="8dp"
+		            android:isIndicator="true"
+		            android:layout_toLeftOf="@+id/undone_pick_up_ratingbar_level"
+		            android:numStars="5" />
+		    </RelativeLayout>
+		
+		    <RelativeLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="16dp"
+		        android:layout_marginRight="16dp"
+		        android:layout_marginBottom="16dp" >
+		
+		        <TextView
+		            android:id="@+id/undone_evaluate_ratingbar_level"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:gravity="center_vertical"
+		            android:layout_marginLeft="16dp"
+		            android:text="x分"
+		            android:textColor="#000000"
+		            android:textSize="14sp" />
+		
+		        <TextView
+		            android:id="@+id/undone_evaluate_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_toLeftOf="@+id/undone_evaluate_ratingbar"
+		            android:text="经纪人楼盘评估服务"
+		            android:textColor="#808080"
+		            android:textSize="14sp" />
+		
+		        <RatingBar
+		            android:id="@+id/undone_evaluate_ratingbar"
+		            style="@style/MyRatingBar"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentTop="true"
+		            android:layout_marginLeft="8dp"
+		            android:isIndicator="true"
+		            android:layout_toLeftOf="@+id/undone_evaluate_ratingbar_level"
+		            android:numStars="5" />
+		    </RelativeLayout>
+		    
+		    <RelativeLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="16dp"
+		        android:layout_marginRight="16dp"
+		        android:layout_marginBottom="16dp" >
+		
+		        <TextView
+		            android:id="@+id/undone_dress_ratingbar_level"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:gravity="center_vertical"
+		            android:layout_marginLeft="16dp"
+		            android:text="x分"
+		            android:textColor="#000000"
+		            android:textSize="14sp" />
+		
+		        <TextView
+		            android:id="@+id/undone_dress_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:isIndicator="true"
+		            android:layout_toLeftOf="@+id/undone_dress_ratingbar"
+		            android:text="经纪人服装整齐服务"
+		            android:textColor="#808080"
+		            android:textSize="14sp" />
+		
+		        <RatingBar
+		            android:id="@+id/undone_dress_ratingbar"
+		            style="@style/MyRatingBar"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentTop="true"
+		            android:layout_marginLeft="8dp"
+		            android:isIndicator="true"
+		            android:layout_toLeftOf="@+id/undone_dress_ratingbar_level"
+		            android:numStars="5" />
+		    </RelativeLayout>
+	    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:background="#F0F0F0">
+		        <EditText 
+		            android:id="@+id/undone_suggest"
+		            android:layout_width="fill_parent"
+		            android:layout_height="160dp"
+			        android:gravity="top"
+		        	android:layout_margin="16dp"
+			        android:hint="建议"
+			        android:textSize="18dip"/>
+		        
+		        <Button 
+		            android:id="@+id/undone_submit_suggest"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/btn_shape_heavy_red"
+		            android:layout_marginTop="8dp"
+		            android:layout_marginLeft="16dp"
+		            android:layout_marginRight="16dp"
+		            android:gravity="center"
+		            android:text="提交"
+		            android:textColor="#ffffff"/>
+		    </LinearLayout>
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

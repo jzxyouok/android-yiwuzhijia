@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/my_house_list_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/my_house_list_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="日期：xxx  时间：xxx"
+            android:textColor="#666666" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp" >
+
+            <ImageView
+                android:id="@+id/my_house_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_locate" />
+
+            <TextView
+                android:id="@+id/my_house_list_pos"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@+id/my_house_arrow"
+                android:layout_toRightOf="@+id/my_house_icon"
+                android:layout_marginLeft="8dp"
+                android:text="楼盘地址"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:textColor="#A8A8A8" />
+
+            <TextView
+                android:id="@+id/my_house_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text=">"
+                android:textColor="#A8A8A8"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/my_house_list_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="楼盘名称"
+            android:textSize="20sp"
+            android:textColor="#666666" />
+    </LinearLayout>
+</RelativeLayout>

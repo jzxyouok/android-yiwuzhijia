@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.manager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission  android:name="android.permission.READ_CONTACTS"/>
+
+    
+      <!-- Required -->
+    <permission android:name="com.android.manager.permission.JPUSH_MESSAGE" 
+        android:protectionLevel="signature" />
+   
+    
+     <!-- Required -->
+    <uses-permission android:name="com.android.manager.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" /> <!--since 1.6.0 -->
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    
+    
+    <application
+        android:name="com.android.manager.ManagerApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/customTheme" >
+        
+        
+          <!-- Required -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+          <intent-filter android:priority="1000"> <!--since 1.3.5 -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!--since 1.3.5 -->
+                <category android:name="com.funmi.house" /> <!--since 1.3.5 -->
+            </intent-filter> <!--since 1.3.5 -->
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+     <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.android.manager" />
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- Required. For publish channel feature -->
+        <!-- JPUSH_CHANNEL 是为了方便开发者统计APK分发渠道。-->
+        <!-- 例如: -->
+        <!-- 发到 Google Play 的APK可以设置为 google-play; -->
+        <!-- 发到其他市场的 APK 可以设置为 xxx-market。 -->
+        <!-- 目前这个渠道统计功能的报表还未开放。-->
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data android:name="JPUSH_APPKEY" android:value="c18ff13ee7b9bbe54c0182bd"/> 
+        
+        
+        
+        
+        
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="odZMhLQG10NujBtqnT77LWV3" />
+        
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        
+        <!-- 注册Service -->  
+        <service android:name="com.android.manager.util.LocateService">  
+            <intent-filter>  
+                <action android:name="com.android.manager.util.LocateService" />  
+            </intent-filter>  
+        </service>
+        
+        <activity
+            android:name="com.BeeFramework.activity.DebugTabActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.BeeFramework.activity.ActivityLifeCycleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.BeeFramework.activity.DebugMessageListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.BeeFramework.activity.DebugDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.BeeFramework.activity.MemoryMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.BeeFramework.activity.FloatViewSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.BeeFramework.activity.CrashLogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.BeeFramework.activity.CrashLogDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.activity.TrendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.BeeFramework.activity.DebugCancelDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        
+        <activity
+            android:name="com.android.manager.activity.LoginActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.manager.activity.BindAccountActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.manager.activity.ChangePsdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.manager.activity.GetLeftMoneyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.manager.activity.ManageMoneyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.manager.activity.ManagerMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.manager.activity.ManageHouseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.manager.activity.SeeClientActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.manager.activity.ManageClientActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.manager.activity.SearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.manager.activity.SelectLocationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.manager.activity.ChangeUserInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.manager.activity.RegisterFillInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.manager.activity.ForgetPsdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.manager.activity.AddClientActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.manager.activity.MyClientActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.manager.activity.ClientRecordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.manager.util.headshot.CropImageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.android.manager.activity.HouseDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.android.manager.activity.HousePicDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.android.manager.activity.RecordDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.BeeFramework.service.MemoryService" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.BeeFramework.MemoryService" />
+            </intent-filter>
+        </service>
+        <service android:name="com.BeeFramework.service.NetworkStateService" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.BeeFramework.NetworkState.Service" /> <!-- 在BeeFrameworkApp中启动，action的name自定义，但与启动service的action的name一致 -->
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_heavy_orange">#F4830B</color>
+    <drawable name="color_b">#44aaaaaa</drawable>
+	<drawable name="color_a">#00000000</drawable>
+	<drawable name="color_m">#ffffffff</drawable>
+	<color name="gl_background">#737373</color>
+</resources>
+

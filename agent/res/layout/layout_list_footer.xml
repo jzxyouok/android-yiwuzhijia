@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/invalid_evaluate_wrapper_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="客户评价 >>"
+            android:textColor="#004AA1"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/invalid_evaluate_wrapper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/invalid_ratingbar_wrapper"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp" >
+
+                    <TextView
+                        android:id="@+id/invalid_pick_up_ratingbar_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center_vertical"
+                        android:text="x分"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/invalid_pick_up_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/invalid_pick_up_ratingbar"
+                        android:text="经纪人买房接送服务"
+                        android:textColor="#808080"
+                        android:textSize="12sp" />
+
+                    <RatingBar
+                        android:id="@+id/invalid_pick_up_ratingbar"
+                        style="@style/MyRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toLeftOf="@+id/invalid_pick_up_ratingbar_level"
+                        android:isIndicator="true"
+                        android:numStars="5" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp" >
+
+                    <TextView
+                        android:id="@+id/invalid_evaluate_ratingbar_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center_vertical"
+                        android:text="x分"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/invalid_evaluate_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/invalid_evaluate_ratingbar"
+                        android:text="经纪人楼盘评估服务"
+                        android:textColor="#808080"
+                        android:textSize="12sp" />
+
+                    <RatingBar
+                        android:id="@+id/invalid_evaluate_ratingbar"
+                        style="@style/MyRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toLeftOf="@+id/invalid_evaluate_ratingbar_level"
+                        android:isIndicator="true"
+                        android:numStars="5" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp" >
+
+                    <TextView
+                        android:id="@+id/invalid_dress_ratingbar_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center_vertical"
+                        android:text="x分"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/invalid_dress_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/invalid_dress_ratingbar"
+                        android:isIndicator="true"
+                        android:text="经纪人服装整齐服务"
+                        android:textColor="#808080"
+                        android:textSize="12sp" />
+
+                    <RatingBar
+                        android:id="@+id/invalid_dress_ratingbar"
+                        style="@style/MyRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toLeftOf="@+id/invalid_dress_ratingbar_level"
+                        android:isIndicator="true"
+                        android:numStars="5" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/invalid_evaluate_manager_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/invalid_ratingbar_wrapper"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/invalid_ratingbar_wrapper"
+                android:background="@drawable/grid_shape"
+                android:paddingBottom="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="16dp"
+                android:text="xx经纪人非常认真负责blablabla"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

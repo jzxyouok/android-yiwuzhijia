@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">易屋之家</string>
+
+    <!-- XListView -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="qfish_introduction">Love coding and hand-drawing, while he is also skilled in HTML and CSS and JS.
+        What he always saying is "Fight, a way of surviving ~".</string>
+    <string name="text">hello</string>
+
+    <string-array name="list_price">
+        <item>不限</item>
+        <item>4千元/m²</item>
+        <item>4千-7千元/m²</item>
+        <item>7千-9千元/m²</item>
+        <item>9千-1万元/m²</item>
+        <item>10万元以上/m²</item>
+    </string-array>
+    <string-array name="list_position">
+        <item>不限</item>
+        <item>高兴区</item>
+        <item>武侯区</item>
+        <item>青羊区</item>
+        <item>成华区</item>
+        <item>金牛区</item>
+    </string-array>
+    <string-array name="list_type">
+        <item>不限</item>
+        <item>一居室</item>
+        <item>两居室</item>
+        <item>三居室</item>
+        <item>四居室</item>
+        <item>四居室以上</item>
+    </string-array>
+    <string-array name="list_decorate">
+        <item>不限</item>
+        <item>毛培</item>
+        <item>简装修</item>
+        <item>精装修</item>
+        <item>豪装修</item>
+    </string-array>
+    <string-array name="list_property_type">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string name="title_activity_house_deal_info">HouseDealInfoActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.funmi.house"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />  
+	<uses-permission android:name="android.permission.USE_CREDENTIALS" />  
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />  
+	<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />  
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  
+	<uses-permission android:name="android.permission.INTERNET" />  
+	<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />  
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />  
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />  
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />  
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />  
+	<uses-permission android:name="android.permission.BROADCAST_STICKY" />  
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <application
+        android:name="com.android.house.HouseApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/customTheme" >
+        <uses-library android:name="android.test.runner" />
+        <meta-data 
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="qVPCnRgH6GLSHoOwG0co6x8z"
+            />
+        <activity
+            android:name="com.BeeFramework.activity.DebugTabActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.BeeFramework.activity.ActivityLifeCycleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.BeeFramework.activity.DebugMessageListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.BeeFramework.activity.DebugDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.BeeFramework.activity.MemoryMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.BeeFramework.activity.FloatViewSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.BeeFramework.activity.CrashLogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.BeeFramework.activity.CrashLogDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.activity.TrendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.BeeFramework.activity.DebugCancelDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+       
+        <activity
+            android:name="com.android.house.activity.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.RegisterFillInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.RegisterConfirmActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.HouseMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.ChangePsdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.AboutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.FeedbackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.ShareActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.GetLeftMoneyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.BindAccountActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.HouseDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.MyHouseActvitiy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.MyHouseFailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.MyHouseUndoneActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.MyHouseSuccessActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.MyWalletActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.SearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.ManagerDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.MyManagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.EvaluateManagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.ChangeUserInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.SelectLocationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.ForgetPsdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.android.house.activity.GalleryImageActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.BeeFramework.service.MemoryService" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.BeeFramework.MemoryService" />
+            </intent-filter>
+        </service>
+        <service android:name="com.BeeFramework.service.NetworkStateService" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.BeeFramework.NetworkState.Service" /> <!-- 在BeeFrameworkApp中启动，action的name自定义，但与启动service的action的name一致 -->
+            </intent-filter>
+        </service>
+        <service 
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="com.baidu.location.service"
+                    android:exported="false"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
+

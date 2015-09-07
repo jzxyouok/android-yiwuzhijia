@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/item_search_list_house_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginBottom="4dp"
+	    android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="#626262"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/item_search_list_house_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_search_list_house_age"
+        android:layout_alignBottom="@+id/item_search_list_house_age"
+        android:layout_toRightOf="@+id/item_search_list_house_age"
+        android:gravity="center_vertical"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="10sp"
+        android:textColor="#BFBFBF" />
+
+    <TextView
+        android:id="@+id/item_search_list_house_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_search_list_house_from"
+        android:layout_alignBottom="@+id/item_search_list_house_from"
+        android:layout_toRightOf="@+id/item_search_list_house_from"
+        android:gravity="center_vertical"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="10sp"
+        android:textColor="#BFBFBF" />
+
+    <TextView
+        android:id="@+id/item_search_list_house_selling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_search_list_house_car"
+        android:layout_alignBottom="@+id/item_search_list_house_car"
+        android:layout_toRightOf="@+id/item_search_list_house_car"
+        android:gravity="center_vertical"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="10sp"
+        android:textColor="#BFBFBF" />
+
+    <TextView
+        android:id="@+id/item_search_list_house_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_search_list_house_name"
+        android:layout_below="@+id/item_search_list_house_name"
+        android:gravity="center_vertical"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textColor="#BFBFBF"
+        android:textSize="10sp" />
+
+</RelativeLayout>

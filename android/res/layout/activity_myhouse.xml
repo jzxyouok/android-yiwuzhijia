@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include 
+        layout="@layout/titlebar"/>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#E6E6E6"/>
+
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="已经看过楼盘"
+		android:background="#F0F0F0"
+		android:textColor="#BEBEBE"/>
+    
+    <com.external.maxwin.view.XListView
+        android:id="@+id/my_house_seen_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:divider="#dcdcdc"
+        android:dividerHeight="0.1dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" >
+    </com.external.maxwin.view.XListView>
+</LinearLayout>

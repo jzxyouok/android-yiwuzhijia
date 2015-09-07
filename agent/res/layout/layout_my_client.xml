@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/my_client_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <RelativeLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="8dp">
+	
+	        <TextView
+	            android:id="@+id/my_client_sex_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/my_client_name_text"
+	            android:layout_below="@+id/my_client_name_text"
+	            android:layout_marginTop="4dp"
+	            android:text="性别："
+	            android:textColor="#F4912B"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/my_client_phone_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/my_client_sex_text"
+	            android:layout_below="@+id/my_client_sex_text"
+	            android:layout_marginTop="4dp"
+	            android:text="客户手机："
+	            android:textColor="#F4912B"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/my_client_kind_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/my_client_phone_text"
+	            android:layout_below="@+id/my_client_phone_text"
+	            android:layout_marginTop="4dp"
+	            android:text="客户类型："
+	            android:textColor="#F4912B"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/my_client_name_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="32dp"
+	            android:layout_marginLeft="8dp"
+	            android:text="昵称："
+	            android:textColor="#F4912B"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/my_client_phone"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_above="@+id/my_client_kind_text"
+	            android:layout_alignTop="@+id/my_client_phone_text"
+	            android:layout_toRightOf="@+id/my_client_phone_text"
+	            android:layout_marginLeft="4dp"
+	            android:text="13366664444"
+	            android:textColor="#000000"
+	            android:textSize="14sp" />
+	
+	        <RelativeLayout 
+	            android:id="@+id/my_client_kind"
+	            android:layout_width="96dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBottom="@+id/my_client_kind_text"
+	            android:layout_alignLeft="@+id/my_client_phone"
+	            android:layout_alignTop="@+id/my_client_kind_text"
+	            android:background="@drawable/spinner_shape">
+	            <TextView 
+	                android:id="@+id/my_client_kind_spinner_text"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="4dp"
+	                android:text="点击修改"/>
+	
+	            <ImageView
+	                android:id="@+id/my_client_kind_spinner_img"
+	                android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                android:paddingRight="4dp"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentTop="true"
+	                android:src="@drawable/spinner_dropdown"
+	                 />
+	
+	        </RelativeLayout>
+	
+	        <com.BeeFramework.view.WebImageView
+	            android:id="@+id/my_client_img"
+	            android:layout_width="80dp"
+	            android:layout_height="36dp"
+	            android:layout_alignBottom="@+id/my_client_kind"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginRight="24dp"
+	            android:layout_marginTop="16dp"
+	            android:src="@drawable/icon_default_user_img" />
+	
+	        <TextView
+	            android:id="@+id/my_client_sex"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBaseline="@+id/my_client_sex_text"
+	            android:layout_alignBottom="@+id/my_client_sex_text"
+	            android:layout_alignLeft="@+id/my_client_phone"
+	            android:text="男"
+	            android:textColor="#000000"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/my_client_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_above="@+id/my_client_sex_text"
+	            android:layout_alignLeft="@+id/my_client_sex"
+	            android:text="张弘"
+	            android:textColor="#000000"
+	            android:textSize="14sp" />
+	
+	    </RelativeLayout>
+	    
+	    <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="陪看记录"
+	        android:padding="8dp"
+	        android:textColor="#000000"
+	        android:textSize="16sp"/>
+	    
+	    <RelativeLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="8dp"
+	        android:paddingBottom="8dp">
+	        
+	        <RelativeLayout 
+	            android:id="@+id/my_client_select_house"
+	            android:layout_width="96dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignTop="@+id/my_client_select_house"
+	            android:layout_marginLeft="16dp"
+	            android:layout_marginRight="16dp"
+	            android:layout_centerHorizontal="true"
+	            android:background="@drawable/spinner_shape">
+	
+	            <ImageView
+	                android:id="@+id/my_client_select_house_spinner_img"
+	                android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                android:paddingRight="4dp"
+	                android:layout_centerVertical="true"
+	                android:layout_alignParentRight="true"
+	                android:src="@drawable/spinner_dropdown" />
+	
+	            <TextView
+	                android:id="@+id/my_client_select_house_spinner_text"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:paddingTop="8dp"
+	                android:paddingBottom="8dp"
+	                android:paddingLeft="8dp"
+	                android:text="楼盘名"
+	                android:singleLine="true"
+	                android:textSize="16sp" />
+			
+	        </RelativeLayout>
+	
+	        <RelativeLayout 
+	            android:id="@+id/my_client_select_state"
+	            android:layout_width="96dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignTop="@+id/my_client_select_house"
+	            android:layout_toRightOf="@+id/my_client_select_house"
+	            android:background="@drawable/spinner_shape">
+	            <TextView 
+	                android:id="@+id/my_client_select_state_spinner_text"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:paddingTop="8dp"
+	                android:paddingBottom="8dp"
+	                android:paddingLeft="8dp"
+	                android:text="用户状态"
+	                android:singleLine="true"
+	                android:textSize="16sp"
+	               />
+	
+	            <ImageView
+	                android:id="@+id/my_client_select_state_spinner_img"
+	                android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                android:paddingRight="4dp"
+	                android:layout_centerVertical="true"
+	                android:layout_alignParentRight="true"
+	                android:src="@drawable/spinner_dropdown" />
+	        </RelativeLayout>
+	
+	        <RelativeLayout 
+	            android:id="@+id/my_client_select_area"
+	            android:layout_width="96dp"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_toLeftOf="@+id/my_client_select_house"
+	            android:background="@drawable/spinner_shape">
+	            <TextView 
+	                android:id="@+id/my_client_select_area_spinner_text"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingTop="8dp"
+	                android:paddingBottom="8dp"
+	                android:paddingLeft="8dp"
+	                android:layout_centerVertical="true"
+	                android:text="区域"
+	                android:singleLine="true"
+	                android:textSize="16sp"/>
+	
+	            <ImageView
+	                android:id="@+id/my_client_select_area_spinner_img"
+	                android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                android:paddingRight="4dp"
+	                android:layout_centerVertical="true"
+	                android:layout_alignParentRight="true"
+	                android:src="@drawable/spinner_dropdown" />
+	        </RelativeLayout>
+	
+	    </RelativeLayout>
+	    
+	    <EditText 
+	        android:id="@+id/my_client_fill_record"
+	        android:layout_width="fill_parent"
+	        android:gravity="left|top"
+	        android:layout_marginRight="8dp"
+	        android:layout_height="96dp"
+	        android:background="@drawable/edit_text_shape"/>
+	    
+	    <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="上传照片"
+	        android:padding="8dp"
+	        android:textColor="#000000"
+	        android:textSize="16sp"/>
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    >
+	        <fragment 
+	            android:id="@+id/image_picker_fragment"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:name="com.android.manager.fragment.ImagePickerFragment"
+	            />
+		    
+		     <Button
+		        android:id="@+id/my_client_confirm"
+		        android:layout_width="80dp"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="8dp"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_gravity="right"
+		        android:background="@drawable/btn_shape_heavy_orange"
+		        android:text="提交"
+		        android:textColor="#ffffff" />
+		</RelativeLayout>
+	   
+	    
+	    <LinearLayout 
+	        android:id="@+id/success_trade_data_wrapper"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:visibility="gone">
+	        <TextView 
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="成交数据"
+			        android:padding="8dp"
+			        android:textColor="#000000"
+			        android:textSize="16sp"/>
+			    
+			    <LinearLayout 
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="vertical"
+			        android:layout_marginLeft="8dp"
+			        android:layout_marginRight="8dp"
+			        android:paddingTop="4dp"
+			        android:paddingBottom="4dp" >
+			        <RelativeLayout 
+			            android:layout_width="fill_parent"
+			            android:layout_height="fill_parent"
+			            android:layout_weight="1.0"
+			            android:layout_marginBottom="8dp" >
+			
+			            <TextView
+			                android:id="@+id/my_client_buyer_text"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentLeft="true"
+			                android:layout_alignParentTop="true"
+			                android:paddingTop="4dp"
+			                android:paddingBottom="4dp"
+			                android:text="购买人："
+			                android:textColor="#000000"
+			                android:textSize="16sp" />
+			
+			            <TextView
+			                android:id="@+id/my_client_house_name_text"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentLeft="true"
+			                android:layout_below="@+id/my_client_buyer_text"
+			                android:layout_marginTop="8dp"
+			                android:paddingTop="4dp"
+			                android:paddingBottom="4dp"
+			                android:text="楼盘名："
+			                android:textColor="#000000"
+			                android:textSize="16sp" />
+			
+			            <TextView
+			                android:id="@+id/my_client_contrast_num_text"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentLeft="true"
+			                android:layout_below="@+id/my_client_house_name_text"
+			                android:layout_marginTop="8dp"
+			                android:paddingTop="4dp"
+			                android:paddingBottom="4dp"
+			                android:text="合同号："
+			                android:textColor="#000000"
+			                android:textSize="16sp" />
+			
+			            <EditText
+			                android:id="@+id/my_client_house_buyer"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignBottom="@+id/my_client_buyer_text"
+			                android:layout_alignParentRight="true"
+			                android:layout_alignTop="@+id/my_client_buyer_text"
+			                android:layout_toRightOf="@+id/my_client_buyer_text"
+			                android:background="@drawable/edit_shape_heavy_gray"
+			                android:paddingLeft="4dp"
+			                android:hint=""
+			                android:textColor="#000000"
+			                android:textSize="16sp" >
+			            </EditText>
+			
+			            <RelativeLayout 
+				            android:id="@+id/my_client_housename"
+				            android:layout_width="72dp"
+				            android:layout_height="wrap_content"
+				            android:layout_alignBottom="@+id/my_client_house_name_text"
+			                android:layout_alignLeft="@+id/my_client_house_buyer"
+			                android:layout_alignParentRight="true"
+			                android:layout_alignTop="@+id/my_client_house_name_text"
+				            android:background="#D7D7D7">
+				            <TextView 
+				                android:id="@+id/my_client_housename_spinner_text"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_centerVertical="true"
+				                android:paddingTop="4dp"
+			                android:paddingBottom="4dp"
+			                android:paddingLeft="4dp"
+				                android:hint=""
+				                android:textColor="#000000"
+				                android:textSize="16sp"/>
+				
+				            <ImageView
+				                android:id="@+id/my_client_housename_spinner_img"
+				                android:layout_width="20dp"
+				                android:layout_height="20dp"
+				                android:paddingRight="4dp"
+				                android:layout_centerVertical="true"
+				                android:layout_alignParentRight="true"
+				                android:src="@drawable/spinner_dropdown" />
+				        </RelativeLayout>
+			
+			            <EditText
+			                android:id="@+id/my_client_contrast_num"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignBottom="@+id/my_client_contrast_num_text"
+			                android:layout_alignParentRight="true"
+			                android:layout_alignTop="@+id/my_client_contrast_num_text"
+			                android:layout_toRightOf="@+id/my_client_contrast_num_text"
+			                android:background="@drawable/edit_shape_heavy_gray"
+			                android:paddingLeft="4dp"
+			                android:hint=""
+			                android:textColor="#000000"
+			                android:textSize="16sp" />
+			
+			            <EditText
+			                android:id="@+id/my_client_house_num"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignBottom="@+id/my_client_house_num_text"
+			                android:layout_alignParentRight="true"
+			                android:layout_alignTop="@+id/my_client_house_num_text"
+			                android:layout_toRightOf="@+id/my_client_house_num_text"
+			                android:background="@drawable/edit_shape_heavy_gray"
+			                android:paddingLeft="4dp"
+			                android:hint=""
+			                android:textColor="#000000"
+			                android:textSize="16sp" />
+			
+			            <TextView
+			                android:id="@+id/my_client_house_num_text"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentLeft="true"
+			                android:layout_below="@+id/my_client_contrast_num"
+			                android:layout_marginTop="8dp"
+			                android:paddingTop="4dp"
+			                android:paddingBottom="4dp"
+			                android:text="房源号："
+			                android:textColor="#000000"
+			                android:textSize="16sp" />
+			
+			            <TextView
+			                android:id="@+id/my_client_house_pos_text"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentLeft="true"
+			                android:layout_below="@+id/my_client_house_num_text"
+			                android:layout_marginTop="8dp"
+			                android:paddingTop="4dp"
+			                android:paddingBottom="4dp"
+			                android:text="刷POS单："
+			                android:textColor="#000000"
+			                android:textSize="16sp" />
+			            
+			            <EditText
+			                android:id="@+id/my_client_pos"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignBottom="@+id/my_client_house_pos_text"
+			                android:layout_toRightOf="@+id/my_client_house_pos_text"
+			                android:layout_alignParentRight="true"
+			                android:layout_alignTop="@+id/my_client_house_pos_text"
+			                android:background="@drawable/edit_shape_heavy_gray"
+			                android:paddingLeft="4dp"
+			                android:hint=""
+			                android:textColor="#000000"
+			                android:textSize="16sp" />
+			        </RelativeLayout>
+			        
+			        <RelativeLayout 
+			            android:layout_width="fill_parent"
+			            android:layout_height="fill_parent"
+			            android:layout_weight="1.0">
+			
+			            <TextView
+			                android:id="@+id/my_client_amount_text"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentLeft="true"
+			                android:layout_alignParentTop="true"
+			                android:paddingTop="4dp"
+			                android:paddingBottom="4dp"
+			                android:text="购买金额："
+			                android:textColor="#000000"
+			                android:textSize="16sp" />
+			
+			            <TextView
+			                android:id="@+id/my_client_pay_text"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentLeft="true"
+			                android:layout_below="@+id/my_client_amount_text"
+			                android:layout_marginTop="8dp"
+			                android:paddingTop="4dp"
+			                android:paddingBottom="4dp"
+			                android:text="付款方式："
+			                android:textColor="#000000"
+			                android:textSize="16sp" />
+			
+			            <TextView
+			                android:id="@+id/my_client_manager_text"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentLeft="true"
+			                android:layout_below="@+id/my_client_pay_text"
+			                android:layout_marginTop="8dp"
+			                android:paddingTop="4dp"
+			                android:paddingBottom="4dp"
+			                android:text="接待销售："
+			                android:textColor="#000000"
+			                android:textSize="16sp" />
+			            
+			            <TextView
+			                android:id="@+id/my_client_relation_text"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentLeft="true"
+			                android:layout_below="@+id/my_client_manager_text"
+			                android:layout_marginTop="8dp"
+			                android:paddingTop="4dp"
+			                android:paddingBottom="4dp"
+			                android:text="双方关系："
+			                android:textColor="#000000"
+			                android:textSize="16sp" />
+			            
+			            <RelativeLayout 
+			                android:id="@+id/my_client_sign_time_wrapper"
+			                android:layout_width="fill_parent"
+			                android:layout_height="wrap_content"
+			                android:layout_marginTop="8dp"
+			                android:layout_below="@+id/my_client_relation_text" >
+			                <TextView
+				                android:id="@+id/my_client_sign_time_text"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_alignParentLeft="true"
+				                android:gravity="center_vertical"
+				                android:paddingTop="4dp"
+			                android:paddingBottom="4dp"
+				                android:text="签约时间："
+				                android:textColor="#000000"
+				                android:textSize="16sp" />
+				            
+				            <TextView
+				                android:id="@+id/my_client_sign_time"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_alignBottom="@+id/my_client_sign_time_text"
+				                android:layout_alignParentRight="true"
+				                android:layout_alignTop="@+id/my_client_sign_time_text"
+				                android:layout_toRightOf="@+id/my_client_sign_time_text"
+				                android:background="@drawable/edit_shape_heavy_gray"
+				                android:gravity="center_vertical"
+				                android:paddingLeft="4dp"
+				                android:hint=""
+				                android:textColor="#000000"
+				                android:textSize="16sp" >
+			            	</TextView>
+			            </RelativeLayout>
+			            
+			            <EditText
+			                android:id="@+id/my_client_relation"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignBottom="@+id/my_client_relation_text"
+			                android:layout_alignParentRight="true"
+			                android:layout_alignTop="@+id/my_client_relation_text"
+			                android:layout_toRightOf="@+id/my_client_relation_text"
+			                android:background="@drawable/edit_shape_heavy_gray"
+			                android:paddingLeft="4dp"
+			                android:hint=""
+			                android:textColor="#000000"
+			                android:textSize="16sp" >
+			
+			            </EditText>
+			
+			            <EditText
+			                android:id="@+id/my_client_amount"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignBottom="@+id/my_client_amount_text"
+			                android:layout_alignParentRight="true"
+			                android:layout_alignTop="@+id/my_client_amount_text"
+			                android:layout_toRightOf="@+id/my_client_amount_text"
+			                android:background="@drawable/edit_shape_heavy_gray"
+			                android:paddingLeft="4dp"
+			                android:hint=""
+			                android:textColor="#000000"
+			                android:textSize="16sp" >
+			            </EditText>
+			
+			            <EditText
+			                android:id="@+id/my_client_pay_spinner_text"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignBottom="@+id/my_client_pay_text"
+			                android:layout_alignParentRight="true"
+			                android:layout_alignTop="@+id/my_client_pay_text"
+			                android:layout_centerVertical="true"
+			                android:layout_toRightOf="@+id/my_client_pay_text"
+			                android:background="@drawable/edit_shape_heavy_gray"
+			                android:paddingLeft="4dp"
+			                android:hint=""
+			                android:textColor="#000000"
+			                android:textSize="16sp" />
+			
+			            <EditText
+			                android:id="@+id/my_client_manager"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignBottom="@+id/my_client_manager_text"
+			                android:layout_alignParentRight="true"
+			                android:layout_alignTop="@+id/my_client_manager_text"
+			                android:layout_toRightOf="@+id/my_client_manager_text"
+			                android:background="@drawable/edit_shape_heavy_gray"
+			                android:paddingLeft="4dp"
+			                android:hint=""
+			                android:textColor="#000000"
+			                android:textSize="16sp" />
+			        </RelativeLayout>
+			    </LinearLayout>
+			    
+			    <Button
+			        android:id="@+id/my_client_success_confirm"
+			        android:layout_width="88dp"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="4dp"
+			        android:layout_marginRight="8dp"
+			        android:layout_marginBottom="8dp"
+			        android:layout_gravity="right"
+			        android:background="@drawable/btn_shape_heavy_orange"
+			        android:text="成交提交"
+			        android:textColor="#ffffff" />
+		    </LinearLayout>
+	    </LinearLayout>
+</LinearLayout>

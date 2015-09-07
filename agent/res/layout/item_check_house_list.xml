@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/list_wrapper1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/check_house_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="楼盘名称"
+            android:textColor="#434343"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/check_house_sell_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="销售时间："
+            android:textColor="#878787"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:id="@+id/list_wrapper3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/list_wrapper1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/check_house_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="佣金："
+            android:textColor="#434343"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/check_house_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间："
+            android:textColor="#878787"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/check_house_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/list_wrapper3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:text="合作状态："
+        android:textColor="#878787"
+        android:textSize="12sp" />
+
+</RelativeLayout>

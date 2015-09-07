@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout 
+        android:id="@+id/success_client_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+        <com.BeeFramework.view.WebImageView 
+	        android:id="@+id/success_client_img"
+	        android:layout_width="48dp"
+	        android:layout_height="48dp"
+	        android:layout_marginTop="8dp"
+	        android:layout_marginLeft="16dp"
+	        android:src="@drawable/icon_default_user_img"/>
+
+	    <TextView
+	        android:id="@+id/success_client_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/success_client_img"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginLeft="8dp"
+	        android:layout_marginRight="8dp"
+	        android:text="17:00"
+	        android:textColor="#000000"
+	        android:textSize="10sp" />
+
+	    <TextView
+	        android:id="@+id/success_client_date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/success_client_time"
+	        android:layout_alignBottom="@+id/success_client_time"
+	        android:layout_toLeftOf="@+id/success_client_time"
+	        android:text="2015.11.11"
+	        android:textColor="#000000"
+	        android:textSize="8sp" />
+
+	    <TextView
+	        android:id="@+id/success_client_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/success_client_img"
+	        android:layout_toRightOf="@+id/success_client_img"
+	        android:layout_marginLeft="8dp"
+	        android:text="xx客户"
+	        android:textColor="#000000"
+	        android:textSize="12sp" />
+
+	    <TextView
+	        android:id="@+id/success_client_phone"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/success_client_img"
+	        android:layout_toRightOf="@+id/success_client_name"
+	        android:layout_marginLeft="24dp"
+	        android:text="客户电话xx"
+	        android:textColor="#000000"
+	        android:textSize="12sp" />
+
+	    <TextView
+	        android:id="@+id/success_client_house"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/success_client_img"
+	        android:layout_toRightOf="@+id/success_client_phone"
+	        android:layout_marginLeft="8dp"
+	        android:text="楼盘名xxx"
+	        android:textColor="#000000"
+	        android:visibility="gone"
+	        android:textSize="12sp" />
+
+	    <TextView
+	        android:visibility="gone"
+	        android:id="@+id/success_client_house_money"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/success_client_img"
+	        android:layout_toRightOf="@+id/success_client_img"
+	        android:layout_marginLeft="4dp"
+	        android:text="房款302万"
+	        android:textColor="#000000"
+	        android:textSize="12sp" />
+
+	    <TextView
+	        android:id="@+id/success_client_manager_money"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/success_client_img"
+	        android:layout_toRightOf="@+id/success_client_house_money"
+	        android:layout_marginLeft="8dp"
+	        android:text="佣金1000元"
+	        android:textColor="#000000"
+	        android:textSize="12sp" />
+
+    </RelativeLayout>
+    
+    <View 
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#dcdcdc"
+        android:layout_below="@+id/success_client_wrapper"/>
+   
+</RelativeLayout>
